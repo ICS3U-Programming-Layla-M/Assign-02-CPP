@@ -27,8 +27,11 @@ void calcSaVol() {
 
 
 void heightValue() {
+    // ask the user to input a valid value for the height
     std::cout << "And now its height (cm): ";
     std::cin >> height;
+
+    // checks for errors in the input
     if (height < 0) {
         std::cout << "The value must be a positive number.\n";
         heightValue();
@@ -39,8 +42,11 @@ void heightValue() {
 
 
 void radiusValue() {
+    // ask the user to input a valid value for the radius
     std::cout << "To start off type in the radius of the cylinder (cm): ";
     std::cin >> radius;
+
+    // checks for errors in the input
     if (radius < 0) {
         std::cout << "The value must be a positive number.\n";
         radiusValue();
